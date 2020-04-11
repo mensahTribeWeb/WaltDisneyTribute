@@ -1,110 +1,5 @@
 *{
-    box-sizing: border-box;
-  
-}
-h1{
-    text-align: end;
-    font-size:70px;
-    color:grey;
-    padding-bottom: 40px;
-}
-h2{
-    text-align:end;
-    font-size:19px;
-    color:mediumblue;
-    padding-top: 23px;
-}
-h3{
-    text-align:center;
-    font-size:50px;
-}
-p{
-    font-size: 16px;
-   
-}
-blockquote{
-    font-size: 20px;
-    color: white;
-    padding: 0px;
-    margin: 0px;
-}
-quote{
-    font-size: 20px;
-    
-}
-#img-div{
-    text-align: center;
-    max-width: 100%;
-    display:block;
-    height: auto;
-}
-
-
-header{
-    width: 100%;
-    height: 800px;
-    background-image: url('images/disneyTheArtist.jpg');
-    background-size: 100% 100%;
-    border: 2px solid black;
-
-}
-body{
-    text-align:center;
-    background-color:hsl(0, 0%, 76%);
-    color:white;
-    font-family: sans-serif;
-    line-height: 150%;
-   
-}
-.column1, .column2{
-text-align: left;
-}
-#iframe{
-    background-image:url(images/wonderfulworld.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:100% 100%;
-     width:100%; 
-   
-    margin-bottom: 0px;
-    position: relative;
-   
-}
-
-
-hr{
-    width: 3%;
-    border-bottom:5px dotted;
-    margin-top: 0px;
-    scroll-padding-top: 0px;   
-}
-
-.wrapper{
-    display: grid;
-    grid-column-gap: 20px;
-    grid-template-columns: minmax(25px, auto) minmax(25px, auto);
-   
-   
-}
-#footer{
-    background-color:hsla(0, 0%, 36%, 0.527);
-    /* height:auto; */
-    width: 100%;
-    position: relative;
-    
-}
-.footer-nav li{
-    display: inline-block;
-    padding-left: 10 12px;
-    border-right:solid 1px midnightblue;
-    margin: 0px;
-}
-ul{
-    list-style-type: none;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-  /* pseuedo links */
-       
+    box-sizing: border-box;  
 }
 a:link{
     color:yellow;
@@ -119,17 +14,132 @@ a:hover{
 a:active{
     color:seagreen;
 }
+blockquote{
+    font-size: 20px;
+    color: white;
+    padding: 0px;
+    margin: 0px;}
+body{
+        text-align:center;
+        background-color:hsl(0, 0%, 76%);
+        color:white;
+        font-family: sans-serif;
+        line-height: 150%;   
+    }
 
-/*=========================================================================================================================
+ #footer{
+        background-color:hsla(0, 0%, 36%, 0.527);
+        /* height:auto; */
+        width: 100%;
+        position: relative;
+        
+    }
+.footer-nav li{
+        display: inline-block;
+        padding-left: 10 12px;
+        border-right:solid 1px midnightblue;
+        margin: 0px;
+    }
+h1{
+    text-align: end;
+    font-size:350%;
+    color:grey;
+    padding-bottom: 40px;
+}
+h2{
+    text-align:end;
+    font-size:160%;
+    color:mediumblue;
+    padding-top: 23px;
+}
+h3{
+    text-align:center;
+    font-size:250%;
+}
+header{
+    width: 100%;
+    height: 800px;
+    background-image: url('images/disneyTheArtist.jpg');
+    background-color:  hsla(0, 0%, 76%, 0);
+    background-size: 100% 100%;
+    border: 2px solid black;
+}
+hr{
+    width: 3%;
+    border-bottom:5px dotted;
+    margin-top: 0px;
+    scroll-padding-top: 0px;   
+}
+#iframe{
+    background-image:url(images/wonderfulworld.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:100% 100%;
+    width:100%; 
+    margin-bottom: 0px;
+    position: relative;  
+}
+#img-div{
+    text-align: center;
+    max-width: 100%;
+    display:block;
+    height: auto;
+}
+p{
+    font-size: 16px;  
+}
+quote{
+    font-size: 20px;
+    
+}
+ul{
+    list-style-type: none;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  /* pseuedo links */      
+}
+.column1, .column2,.column3,.column4{
+    text-align: left;
+    line-height: 250%;
+    }
+.column1{
+        grid-area: col1;
+        }
+ .column2{
+        grid-area: col2;
+        }
+.column3{
+        grid-area: col3;
+        }
+.column4{
+        grid-area: col4;
+        }
 
-==========================================================================================================================*/
-@media(min-width:769px){
+.wrapper{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-areas: fit-content(20%) ;
+    
+}
+
+
+@media(min-width:469px){
     .container{
         width:100%;
         max-width:100%;
         margin:0 auto;
+        line-height: 250%;
+    }
+    .wrapper{
+        display: grid;
+        grid-column-gap: 20px;
+        grid-template-areas: fit-content(20%) ;
+       
     }
 }
-.wrapper{
-    min-height: 100vh;
-}
+
+
+/*=========================================================================================================================
+
+==========================================================================================================================*/
+
